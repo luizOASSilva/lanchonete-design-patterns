@@ -8,6 +8,7 @@ public class App {
 
         System.out.print("Forma de pagamento (pix, cartao, dinheiro, vr): ");
         System.out.println("teste");
+        System.out.println(" +luiz otavio");
         String escolha = scanner.nextLine();
 
         FormaPagamento forma = catalogo.escolher(escolha);
