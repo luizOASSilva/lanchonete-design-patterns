@@ -6,7 +6,7 @@ public abstract class Lanche {
     private String molho;
 
     protected Lanche(String nome, double preco,
-                     String recheio, String Queijo, String molho) {
+            String recheio, String Queijo, String molho) {
         this.nome = nome;
         setPreco(preco);
         this.recheio = recheio;
@@ -21,11 +21,25 @@ public abstract class Lanche {
         System.out.println("Preço: R$ " + preco);
     }
 
-    public String getNome() { return nome; }
-    public double getPreco() { return preco; }
-    public String getRecheio() { return recheio; }
-    public String getQueijo() { return Queijo; }
-    public String getMolho() { return molho; }
+    public String getNome() {
+        return nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public String getRecheio() {
+        return recheio;
+    }
+
+    public String getQueijo() {
+        return Queijo;
+    }
+
+    public String getMolho() {
+        return molho;
+    }
 
     public void setPreco(double preco) {
         if (preco < 0) {
