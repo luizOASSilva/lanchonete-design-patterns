@@ -1,18 +1,16 @@
 public abstract class Lanche {
     private String nome;
     private double preco;
-    private String tipoPao;
-    private String recheioPrincipal;
-    private boolean temQueijo;
+    private String recheio;
+    private String Queijo;
     private String molho;
 
-    protected Lanche(String nome, double preco, String tipoPao,
-                     String recheioPrincipal, boolean temQueijo, String molho) {
+    protected Lanche(String nome, double preco,
+                     String recheio, String Queijo, String molho) {
         this.nome = nome;
-        setPreco(preco); 
-        this.tipoPao = tipoPao;
-        this.recheioPrincipal = recheioPrincipal;
-        this.temQueijo = temQueijo;
+        setPreco(preco);
+        this.recheio = recheio;
+        this.Queijo = Queijo;
         this.molho = molho;
     }
 
@@ -21,18 +19,12 @@ public abstract class Lanche {
     public void exibirDetalhes() {
         System.out.println("Lanche: " + nome);
         System.out.println("Preço: R$ " + preco);
-        System.out.println("Pão: " + tipoPao);
-        System.out.println("Recheio: " + recheioPrincipal);
-        System.out.println("Queijo: " + (temQueijo ? "Sim" : "Não"));
-        System.out.println("Molho: " + molho);
     }
-
 
     public String getNome() { return nome; }
     public double getPreco() { return preco; }
-    public String getTipoPao() { return tipoPao; }
-    public String getRecheioPrincipal() { return recheioPrincipal; }
-    public boolean isTemQueijo() { return temQueijo; }
+    public String getRecheio() { return recheio; }
+    public String getQueijo() { return Queijo; }
     public String getMolho() { return molho; }
 
     public void setPreco(double preco) {
