@@ -1,6 +1,6 @@
 public class XSalada extends Lanche {
 
-    private String salada;   // atributo exclusivo da XSalada
+    private String salada;  
 
     public XSalada(String salada) {
         super(
