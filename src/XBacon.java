@@ -1,0 +1,22 @@
+public class XBacon extends Lanche {
+
+    private String bacon;
+
+    public XBacon(String bacon) {
+
+        super(
+            "X-Bacon",
+            18.00,
+            "Salada",
+            "Mussarela",
+            "Ketchup + Maionese"
+        );
+
+        this.bacon = bacon;
+    }
+
+    @Override
+    public void preparar() {
+      
+    }
+}
