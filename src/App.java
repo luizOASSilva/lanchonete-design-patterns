@@ -7,6 +7,7 @@ public class App {
         Carrinho carrinho = new Carrinho();
 
         System.out.print("Forma de pagamento (pix, cartao, dinheiro, vr): ");
+        System.out.println("teste kainã");
         String escolha = scanner.nextLine();
 
         FormaPagamento forma = catalogo.escolher(escolha);
