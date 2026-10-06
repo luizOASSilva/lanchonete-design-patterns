@@ -14,8 +14,6 @@ public abstract class Lanche {
         this.molho = molho;
     }
 
-    public abstract void preparar();
-
     public void exibirDetalhes() {
         System.out.println("Lanche: " + nome);
         System.out.println("Preço: R$ " + preco);

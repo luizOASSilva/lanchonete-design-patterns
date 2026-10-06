@@ -15,8 +15,8 @@ public class XBacon extends Lanche {
         this.bacon = bacon;
     }
 
-    @Override
-    public void preparar() {
-      
+     public String getBacon() {
+        return bacon;
     }
+   
 }

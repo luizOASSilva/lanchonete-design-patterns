@@ -2,24 +2,30 @@ public class XTudo extends Lanche {
 
     private String ovo;
     private String presunto;
-    private String bacon;
+    private String bacontudo;
 
-    public XTudo(String ovo, String presunto, String bacon) {
+    public XTudo(String ovo, String presunto, String bacontudo) {
 
         super(
-            "X-Frango",
-            22.00,
-            "Frango + Hamburguer",
-            "Mussarela",
-            "Ketchup + Maionese"
-        );
+                "X-Frango",
+                22.00,
+                "Frango + Hamburguer",
+                "Mussarela",
+                "Ketchup + Maionese");
         this.ovo = ovo;
         this.presunto = presunto;
-        this.bacon = bacon;
+        this.bacontudo = bacontudo;
     }
 
-    @Override
-    public void preparar() {
-      
+    public String getOvo() {
+        return ovo;
+    }
+
+    public String getBacontudo() {
+        return bacontudo;
+    }
+
+    public String getPresunto() {
+        return presunto;
     }
 }
