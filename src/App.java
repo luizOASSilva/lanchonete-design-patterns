@@ -6,7 +6,7 @@ public class App {
         Pagamento catalogo = new Pagamento();
         Carrinho carrinho = new Carrinho();
 
-        System.out.print("Forma de pagamento (pix, cartao, dinheiro, vr): ");
+        System.out.print("Forma de pagamento (pix,  dinheiro, cartao, vr): ");
         String escolha = scanner.nextLine();
 
         FormaPagamento forma = catalogo.escolher(escolha);
