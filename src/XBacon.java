@@ -7,7 +7,7 @@ public class XBacon extends Lanche {
         super(
             "X-Bacon",
             18.00,
-            "Salada",
+            "Hamburguer",
             "Mussarela",
             "Ketchup + Maionese"
         );
