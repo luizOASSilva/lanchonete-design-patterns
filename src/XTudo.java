@@ -7,9 +7,9 @@ public class XTudo extends Lanche {
     public XTudo(String ovo, String presunto, String bacontudo) {
 
         super(
-                "X-Frango",
+                "X-Tudo",
                 22.00,
-                "Frango + Hamburguer",
+                "Bacon + Hamburguer",
                 "Mussarela",
                 "Ketchup + Maionese");
         this.ovo = ovo;
