@@ -29,7 +29,7 @@ class VR implements FormaPagamento{
 
 }
 
-    class Carrinho{
+class Carrinho{
     private FormaPagamento forma;
 
     public void setForma(FormaPagamento forma){
