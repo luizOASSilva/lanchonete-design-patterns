@@ -5,8 +5,13 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         Pagamento catalogo = new Pagamento();
         Carrinho carrinho = new Carrinho();
+        
+         
 
-        System.out.print("Forma de pagamento (pix,  dinheiro, cartao, vr): ");
+        System.out.println("O valor da compra foi de quanto?: ");
+        double valorCompra = Double.parseDouble(scanner.nextLine());
+
+        System.out.print("Forma de pagamento (pix, dinheiro, cartao, vr): ");
         String escolha = scanner.nextLine();
 
         FormaPagamento forma = catalogo.escolher(escolha);
@@ -15,7 +20,7 @@ public class App {
             System.out.println("Forma de pagamento inválida.");
         } else {
             carrinho.setForma(forma);
-            carrinho.finalizarCompra(100);
+            carrinho.finalizarCompra(valorCompra);
         }
 
         scanner.close();
