@@ -1,7 +1,7 @@
 public interface ControleAcessoInterface {
-    abstract void visualizarPedido();
+    void visualizarPedido();
 
-    abstract void cancelarPedido();
+    void cancelarPedido();
 
-    abstract void alterarPedido();
+    void alterarPedido();
 }
