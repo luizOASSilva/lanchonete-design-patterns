@@ -1,10 +1,12 @@
 public class Usuario {
     private String nome;
     private String funcao;
+    private String senha;
 
-    public Usuario(String nome, String funcao) {
+    public Usuario(String nome, String funcao, String senha) {
         this.nome = nome;
         this.funcao = funcao;
+        this.senha = senha;
     }
     
     public Usuario(){};    
@@ -24,5 +26,13 @@ public class Usuario {
 
     public void setFuncao(String funcao) {
         this.funcao = funcao;
+    }
+
+    public String getSenha() {
+        return this.senha;
+    }
+
+    public void setSenha(String funcao) {
+        this.senha = senha;
     }
 }
