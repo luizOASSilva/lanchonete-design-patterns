@@ -7,9 +7,7 @@ public class XFrango extends Lanche {
                 22.00,
                 "Frango",
                 "Mussarela",
-                "Ketchup + Maionese");
-
+                "Ketchup + Maionese"
+        );
     }
-
-    
 }

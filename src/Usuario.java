@@ -1,16 +1,21 @@
 public class Usuario {
+
     private String nome;
     private String funcao;
     private String senha;
 
-    public Usuario(String nome, String funcao, String senha) {
+    public Usuario(
+            String nome,
+            String funcao,
+            String senha) {
+
         this.nome = nome;
         this.funcao = funcao;
         this.senha = senha;
     }
-    
-    public Usuario(){};    
-    
+
+    public Usuario() {
+    }
 
     public String getNome() {
         return this.nome;
@@ -32,7 +37,7 @@ public class Usuario {
         return this.senha;
     }
 
-    public void setSenha(String funcao) {
+    public void setSenha(String senha) {
         this.senha = senha;
     }
 }

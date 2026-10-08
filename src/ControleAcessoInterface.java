@@ -1,7 +1,11 @@
 public interface ControleAcessoInterface {
-    void visualizarPedido();
+    void visualizarPedido(Pedido pedido);
 
-    void cancelarPedido();
+    void cancelarPedido(Pedido pedido);
 
-    void alterarPedido();
+    void alterarPedido(Pedido pedido, int indice, int novaQuantidade);
+
+    void removerItem(Pedido pedido, int indice);
+
+    boolean podeAlterarPedido(Pedido pedido);
 }
