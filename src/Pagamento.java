@@ -1,30 +1,30 @@
 
 //criado inteface
 interface FormaPagamento{
-    void pagar(double valor);
+    void pagar(double valorCompra);
 }
 //criando estrategias
 class Dinheiro implements FormaPagamento{
-    public void pagar(double valor){
-        System.out.println("Pagando R$ "+ valor + " no Dinheiro");
+    public void pagar(double valorCompra){
+        System.out.println("Pagando R$ "+ valorCompra + " no Dinheiro");
     }
 
 }
 class Pix implements FormaPagamento{
-    public void pagar(double valor){
-        System.out.println("Pagando R$ "+ valor + "no PIX");
+    public void pagar(double valorCompra){
+        System.out.println("Pagando R$ "+ valorCompra + " no PIX");
     }
 
 }
 class Cartao implements FormaPagamento{
-    public void pagar(double valor){
-        System.out.println("Pagando R$ "+ valor + " no Cartão");
+    public void pagar(double valorCompra){
+        System.out.println("Pagando R$ "+ valorCompra + " no Cartão");
     }
 
 }
 class VR implements FormaPagamento{
-    public void pagar(double valor){
-        System.out.println("Pagando R$ "+ valor + " no VR");
+    public void pagar(double valorCompra){
+        System.out.println("Pagando R$ "+ valorCompra + " no VR");
     }
 
 }
@@ -35,8 +35,8 @@ class VR implements FormaPagamento{
     public void setForma(FormaPagamento forma){
         this.forma = forma;
     }
-    public void finalizarCompra(double valor){
-        forma.pagar(valor);
+    public void finalizarCompra(double valorCompra){
+        forma.pagar(valorCompra);
     }
 
 }
